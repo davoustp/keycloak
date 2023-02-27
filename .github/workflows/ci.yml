@@ -511,7 +511,7 @@ jobs:
       - name: Download built keycloak
         if: ${{ github.event_name != 'pull_request' || env.GIT_DIFF != 0 }}
         id: download-keycloak
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           path: ~/.m2/repository/org/keycloak/
           name: keycloak-artifacts.zip
