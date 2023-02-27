@@ -526,7 +526,7 @@ jobs:
           exit $TEST_RESULT
 
       - name: WebAuthn test reports
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: failure()
         with:
           name: reports-webauthn-tests
